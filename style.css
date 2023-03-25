@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --bg-color: #FFFFFF;
+    --color-time: #323238;
+    --ff-timer: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.hide { 
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.timer span {
+    font-family: var(--ff-timer);
+    color: var(--color-time);
+    font-size: 12rem;
+    line-height: 14.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    border: none;
+}
+
+/* .container {
+    padding-right: 19.2rem;
+} */
+
+.controls button {
+    cursor: pointer;
+    margin-right: 3.3rem;
+}
+
+/* Sons */
+
+.sounds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3.2rem;
+}
+
+.sounds button {
+    cursor: pointer;
+    /*transition: transform .3s;*/
+    transform: scale(1.0) ;
+}
+
+.sound-forest svg path:hover,
+.sound-fireplace svg path:hover,
+.sound-coffeShop svg path:hover {
+    fill: #cdcdcf;
+    transition: 400ms linear;
+    transform: scale(1.0);
+}
+
+.sound-rain svg path:hover {
+    fill: #036582;
+    transition: 400ms linear;
+    transform: scale(1.0);
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 854px) {
+    .container {
+            padding-right: 19.2rem;
+        }
+}
+@media screen and (max-width: 854px) {
+    main {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sounds {
+        padding-top: 4rem;
+
+    }
+}
+@media screen and (max-width: 363px) {
+        .controls button {
+            margin-right: 2rem;
+}
+}
+
+
+
+
