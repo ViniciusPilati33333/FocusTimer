@@ -1,6 +1,5 @@
 import { Timer } from "./timer.js";
 import { Sound } from "./sounds.js";
-
 import {
   playTimer,
   pauseTimer,

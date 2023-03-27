@@ -20,8 +20,8 @@ export function Sound() {
   }
 
   return {
-    pressButton,
-    timeEnd,
-    playForestAudio,
-  };
+        pressButton,
+        timeEnd,
+        playForestAudio,
+    }
 }
