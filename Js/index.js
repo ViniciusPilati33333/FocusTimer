@@ -1,8 +1,9 @@
 import { Timer } from "./timer.js"; 
-import Sound from "./sounds.js";
+import { Sound } from "./sounds.js";
+import { elements } from './elements.js'
  
 
-import {
+ import {
   playTimer,
   pauseTimer,
   updateTimer,
@@ -14,7 +15,7 @@ import {
   soundRain,
   soundCoffeShop,
   soundFireplace,
-} from './elements.js';
+} from './elements.js'; 
 
 const sound = Sound()
 
