@@ -10,17 +10,16 @@ const soundRain = document.querySelector(".sound-rain");
 const soundCoffeShop = document.querySelector(".sound-coffeShop");
 const soundFireplace = document.querySelector(".sound-fireplace");
 
-
-export default Elements = { 
-    playTimer,
-    pauseTimer,
-    updateTimer,
-    minutesDisplay,
-    secondsDisplay,
-    buttonAddFiveMinutes,
-    buttonRemoveFiveMinutes,
-    soundForest,
-    soundRain,
-    soundCoffeShop,
-    soundFireplace,
-}
+export {
+  playTimer,
+  pauseTimer,
+  updateTimer,
+  minutesDisplay,
+  secondsDisplay,
+  buttonAddFiveMinutes,
+  buttonRemoveFiveMinutes,
+  soundForest,
+  soundRain,
+  soundCoffeShop,
+  soundFireplace,
+};
