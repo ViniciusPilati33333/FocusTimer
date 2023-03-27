@@ -11,7 +11,7 @@ const soundCoffeShop = document.querySelector(".sound-coffeShop");
 const soundFireplace = document.querySelector(".sound-fireplace");
 
 
-export const Elements = { 
+export default Elements = { 
     playTimer,
     pauseTimer,
     updateTimer,
