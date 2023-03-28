@@ -9,12 +9,13 @@ import {
   buttonAddFiveMinutes,
   buttonRemoveFiveMinutes,
   soundForest,
-  // soundRain,
-  // soundCoffeShop,
-  // soundFireplace,
+  soundRain,
+  soundCoffeShop,
+  soundFireplace,
 } from "./elements.js";
 
 const sound = Sound();
+
 
 const timer = Timer({
   minutesDisplay,
@@ -53,10 +54,17 @@ buttonRemoveFiveMinutes.addEventListener("click", function () {
 
 soundForest.addEventListener("click", function () {
   sound.playForestAudio();
+
 });
 
-// soundRain.addEventListener("click", function () {});
+soundRain.addEventListener("click", function () {
+  sound.playRainAudio();
+});
 
-// soundCoffeShop.addEventListener("click", function () {});
+soundCoffeShop.addEventListener("click", function () {
+  sound.playSoundCoffeShop();
+});
 
-// soundFireplace.addEventListener("click", function () {});
+soundFireplace.addEventListener("click", function () {
+  sound.playSoundFireplace();
+});
